@@ -20,6 +20,26 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+body {
+     margin: 0;
+     padding: 0;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+h1{
+     font-family: 'Bungee', cursive;
+     margin: 0 ;
+     font-size: 100px;
+}
+section{
+     width: 50%;
+}
+.square{
+     width: 33%;
+     display: inline-block;
+}
 
 
 
