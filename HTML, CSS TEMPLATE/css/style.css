@@ -36,11 +36,16 @@ h1{
 }
 section{
      width: 50%;
-     border: 10px solid black;
 }
+
 .square{
      width: 33%;
+     padding: 5%;
      display: inline-block;
+     height: 250px;
+     background-color:#171746;
+     border-radius: 30px;
+
 }
 
 
