@@ -80,7 +80,13 @@ section{
      background-color: rgb(214, 214, 6);
      text-decoration: none;
 }
-
+.image-class{
+     height: 110px;
+     width: 110px;
+     position: relative;
+     left: 10px;
+     top: 5px;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
