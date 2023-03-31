@@ -21,6 +21,7 @@
 /* BASE STYLES
 /*******************************************/
 body {
+     background-image: url('/Christians-Tic-tac-toe/images/Galaxy.jpg');
      background-color: black;
      min-height: 100vh;
      display: flex;
@@ -50,7 +51,7 @@ section{
      padding: 5%;
      display: inline-block;
      min-height: 164px;
-     background-color:#171746;
+     background-color:#62419c;
      border-radius: 30px;
      padding-top: 20px;
      margin-bottom: 12px;
