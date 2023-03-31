@@ -35,11 +35,11 @@ h1{
 
 }
 section{
-     width: 50%;
+     width: 100%;
 }
 
 .square{
-     width: 33%;
+     width: 30%;
      padding: 5%;
      display: inline-block;
      height: 250px;
