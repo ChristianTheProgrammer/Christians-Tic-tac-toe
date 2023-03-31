@@ -21,7 +21,7 @@
 /* BASE STYLES
 /*******************************************/
 body {
-
+     background-color: black;
      min-height: 100vh;
      display: flex;
      justify-content: center;
@@ -32,6 +32,7 @@ h1{
      font-size: 100px;
      margin: 0 auto;
      width: 100%;
+     color: rgb(214, 214, 6);
 
 }
 section{
@@ -51,19 +52,23 @@ section{
      height: 200px;
      background-color:#171746;
      border-radius: 30px;
-
 }
 #outcome{
      width: 100%;
      text-align: center;
 }
 .playerOutcome{
+     color: rgb(214, 214, 6);
      font-family: 'Bungee', cursive;
-     font-size: 50px;
+     font-size: 35px;
+     padding-bottom: 50px;
 }
 .button{
      font-family: 'Bungee', cursive;
-     font-size: 50px;
+     font-size: 40px;
+     border-radius: 10px;
+     background-color: rgb(214, 214, 6);
+     text-decoration: none;
 }
 
 /******************************************
