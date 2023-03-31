@@ -39,7 +39,7 @@ section{
 }
 
 .square{
-     width: 25%;
+     width: 32%;
      padding: 5%;
      display: inline-block;
      height: 200px;
@@ -47,10 +47,13 @@ section{
      border-radius: 30px;
 
 }
-
+#outcome{
+     width: 100%;
+     text-align: center;
+}
 .playerOutcome{
      font-family: 'Bungee', cursive;
-     font-size: 25px;
+     font-size: 50px;
 }
 .button{
      font-family: 'Bungee', cursive;
