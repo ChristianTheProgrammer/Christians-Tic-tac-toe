@@ -39,6 +39,9 @@ section{
      display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
+     background-color: rgb(67, 185, 146);
+     border-radius: 10px;
+     padding: 30px;
 }
 
 .square{
