@@ -21,7 +21,9 @@
 /* BASE STYLES
 /*******************************************/
 body {
-     background-image: url('/Christians-Tic-tac-toe/images/Galaxy.jpg');
+     background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Galaxy.jpg');
+     /*background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Galaxy.jpg');*/
+     background-size: auto;
      background-color: black;
      min-height: 100vh;
      display: flex;
