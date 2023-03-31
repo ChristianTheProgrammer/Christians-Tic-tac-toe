@@ -23,7 +23,7 @@
 body {
      background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Galaxy.jpg');
      /*background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Galaxy.jpg');*/
-     background-size: auto;
+     background-position: center -50px;
      background-color: black;
      min-height: 100vh;
      display: flex;
@@ -43,7 +43,7 @@ section{
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-     background-color: rgb(67, 185, 146);
+     background-color: #5909bb;
      border-radius: 10px;
      padding: 30px;
 }
@@ -53,7 +53,7 @@ section{
      padding: 5%;
      display: inline-block;
      min-height: 164px;
-     background-color:#62419c;
+     background-color:#000000;
      border-radius: 30px;
      padding-top: 20px;
      margin-bottom: 12px;
