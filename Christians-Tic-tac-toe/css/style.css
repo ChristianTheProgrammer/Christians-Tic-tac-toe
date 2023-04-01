@@ -37,6 +37,7 @@ h1{
      width: 100%;
      color: rgb(214, 214, 6);
   /* Title Animation  */
+  /*******************************************/
      animation: float 3s ease-in-out infinite;
    }
    
@@ -51,6 +52,7 @@ h1{
        transform: translate(0, 0);
      }
    }
+   /*******************************************/
    /* Title Animation  */
 section{
      width: 100%;
@@ -75,7 +77,7 @@ section{
 }
 
 .square:hover {
-     background-color: red;
+     background-color: rgb(171, 163, 226);
      }
 #outcome{
      width: 100%;
