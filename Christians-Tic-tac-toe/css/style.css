@@ -103,6 +103,8 @@ section{
      left: 10px;
      top: 5px;
 }
+
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -111,3 +113,28 @@ section{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+#ufo {
+     background-image: url('/Christians-Tic-tac-toe/images/Alien.png');
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 744px; /* Change this value as needed */
+     height: 341px; /* Change this value as needed */
+     position: fixed;
+     right: 0;
+     transform: translateY(-50%);
+     animation: float 13s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+   
+   
