@@ -36,6 +36,7 @@ h1{
      margin: 0 auto;
      width: 100%;
      color: rgb(214, 214, 6);
+  /* Title Animation  */
      animation: float 3s ease-in-out infinite;
    }
    
@@ -50,6 +51,7 @@ h1{
        transform: translate(0, 0);
      }
    }
+   /* Title Animation  */
 section{
      width: 100%;
      display: flex;
