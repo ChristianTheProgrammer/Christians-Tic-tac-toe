@@ -66,6 +66,7 @@ section{
 
 .square{
      min-width: 32%;
+     max-width: 60px;
      padding: 5%;
      display: inline-block;
      min-height: 164px;
@@ -75,7 +76,9 @@ section{
      margin-bottom: 12px;
      transition: background-color 0.3s ease-in-out;
 }
-
+.square img {
+     width: 125px;
+ }
 .square:hover {
      background-color: rgb(171, 163, 226);
      }
@@ -114,7 +117,7 @@ section{
 /* ADDITIONAL STYLES
 /*******************************************/
 #ufo {
-     background-image: url('/Christians-Tic-tac-toe/images/Alien.png');
+     background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Alien.png');
      background-repeat: no-repeat;
      background-size: contain;
      width: 744px; /* Change this value as needed */
