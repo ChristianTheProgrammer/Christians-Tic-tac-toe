@@ -5,7 +5,7 @@ This is a simple implementation of the classic game Tic-Tac-Toe using HTML, CSS,
 
 # Installation
 Clone the repository to your local machine using the following command:
-git clone https://github.com/your-username/Tic-Tac-Toe.git
+git clone https://github.com/ChristianTheProgrammer/Christians-Tic-tac-toe
 
 #Usage
 Open the index.html file in your web browser to play the game. The game is played by clicking on the squares on the game board to place X's and O's. The first player to get three in a row wins.
