@@ -109,30 +109,39 @@
 //       return emptySides[Math.floor(Math.random() * emptySides.length)];
 //     }
 //   }
+
+
+// Create a variable and select all the elements in html that have the class of square(Using querySelectorAll creates an array and is put into the variable squares)
 const squares = document.querySelectorAll(".square");
+//Create two variables that will use an image in place of the X's and O's for the game
 const playerX = new Image();
-playerX.src = "images/favpng_jupiter-planet-mercury-uranus-clip-art.png"; // Replace with your X image source
+playerX.src = "images/favpng_jupiter-planet-mercury-uranus-clip-art.png"; 
 const playerO = new Image();
-playerO.src = "images/favpng_planet-euclidean-vector.png"; // Replace with your O image source
-let currentPlayer = playerX; // Start with player X
-let gameIsOver = false; // Set to true when game is over
-
-const playerOutcome = document.querySelector(".playerOutcome"); // Select the h2 tag
-
+playerO.src = "images/favpng_planet-euclidean-vector.png";
+// Start with player X
+let currentPlayer = playerX; 
+// Set to true when game is over
+let gameIsOver = false; 
+//create a variable and select the h2 with the class of playerOutcome in the html that will display the player outcome
+const playerOutcome = document.querySelector(".playerOutcome"); 
+//Attach a click event and function to each square on the board(Using a for loop to iterate through each square element in the square array)
 squares.forEach((square) => {
   square.addEventListener("click", handleClick);
 });
-
+//Function for above
 function handleClick(event) {
+  //The square that was clicked is obtained from the event object using event.target
   const square = event.target;
+  //The index of the square is obtained using square.getAttribute("id")
   const index = square.getAttribute("id");
-
+//Add if statement to check is the square is occupied or if the game is over. If either condition is true, the function returns without doing anything.
   if (square.innerHTML !== "" || gameIsOver) {
     return;
   }
-
-  square.appendChild(currentPlayer.cloneNode()); // Append the Image element
-
+//If the square is empty and the game is still going on, the currentPlayer image is appended to the square using square.appendChild(currentPlayer.cloneNode()).
+  square.appendChild(currentPlayer.cloneNode()); // Appends the Image element
+//function that checks for winner If there is a winner, the name of the winning player is determined and an outcome message is created with the template literal 
+//${winnerName} wins!. The outcome message is then displayed in the playerOutcome element and the gameIsOver variable is set to true.
   if (checkForWinner()) {
     const winnerName = currentPlayer === playerX ? "Uranus" : "Saturn";
     const outcomeMessage = `${winnerName} wins!`;
@@ -140,15 +149,17 @@ function handleClick(event) {
     gameIsOver = true; // Game is over
     return;
   }
-
+//Create function for tie games
+//
   if (checkForTie()) {
     const outcomeMessage = "It's a tie!";
     playerOutcome.textContent = outcomeMessage; // Update the h2 tag with the outcome message
     gameIsOver = true; // Game is over
     return;
   }
-
-  currentPlayer = currentPlayer === playerX ? playerO : playerX; // Switch players
+//If there is a tie, an outcome message is created with the string "It's a tie!" and displayed in the playerOutcome element. The gameIsOver variable is also set to true.
+//If there is no winner or tie, the currentPlayer variable is switched to the other player, so that the next move is made by the other player.  
+currentPlayer = currentPlayer === playerX ? playerO : playerX; // Switch players
 }
 
 function checkForWinner() {
