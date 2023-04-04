@@ -21,7 +21,7 @@
 /* BASE STYLES
 /*******************************************/
 body {
-     background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Galaxy.jpg');
+     background-image: url('/images/Galaxy.jpg');
      /*background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Galaxy.jpg');*/
      background-position: center -50px;
      background-color: black;
@@ -117,7 +117,7 @@ section{
 /* ADDITIONAL STYLES
 /*******************************************/
 #ufo {
-     background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Alien.png');
+     background-image: url('/images/Alien.png');
      background-repeat: no-repeat;
      background-size: contain;
      width: 744px; /* Change this value as needed */
@@ -129,15 +129,60 @@ section{
 }
 
 
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -20px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
+@media (max-width: 1838px){
+     #ufo {
+          background-image: url('/images/Alien.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 538px; /* Change this value as needed */
+          height: 341px; /* Change this value as needed */
+          position: fixed;
+          right: -87px;
+          transform: translateY(-50%);
+          animation: float 13s ease-in-out infinite;
+     }
 }
-   
+
+@media (max-width: 1280px){
+     #ufo {
+          background-image: url('/images/Alien.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 489px; /* Change this value as needed */
+          height: 341px; /* Change this value as needed */
+          position: fixed;
+          right: -81px;
+          transform: translateY(-50%);
+          animation: float 13s ease-in-out infinite;
+     }
+}
+
+@media (max-width: 1231px){
+     #ufo {
+          background-image: url('/images/Alien.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 363px;
+          height: 334px;
+          position: fixed;
+          right: -31px;
+          transform: translateY(-50%);
+          animation: float 13s ease-in-out infinite;
+     }
+}
+
+@media (max-width: 1137px){
+     #ufo {
+          background-image: url('/images/Alien.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 301px;
+          height: 334px;
+          position: fixed;
+          right: -63px;
+          transform: translateY(-50%);
+          animation: float 13s ease-in-out infinite;
+     }
+}
+
+
