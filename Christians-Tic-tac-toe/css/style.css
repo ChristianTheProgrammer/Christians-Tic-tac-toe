@@ -21,8 +21,8 @@
 /* BASE STYLES
 /*******************************************/
 body {
-     background-image: url('/images/Galaxy.jpg');
-     /*background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Galaxy.jpg');*/
+    /* background-image: url('/images/Galaxy.jpg');*/
+     background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Galaxy.jpg');
      background-position: center -50px;
      background-color: black;
      min-height: 100vh;
@@ -117,7 +117,7 @@ section{
 /* ADDITIONAL STYLES
 /*******************************************/
 #ufo {
-     background-image: url('/images/Alien.png');
+     background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Alien.png');
      background-repeat: no-repeat;
      background-size: contain;
      width: 744px; /* Change this value as needed */
@@ -131,7 +131,7 @@ section{
 
 @media (max-width: 1838px){
      #ufo {
-          background-image: url('/images/Alien.png');
+          background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Alien.png');
           background-repeat: no-repeat;
           background-size: contain;
           width: 538px; /* Change this value as needed */
@@ -145,7 +145,7 @@ section{
 
 @media (max-width: 1280px){
      #ufo {
-          background-image: url('/images/Alien.png');
+          background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Alien.png');
           background-repeat: no-repeat;
           background-size: contain;
           width: 489px; /* Change this value as needed */
@@ -159,7 +159,7 @@ section{
 
 @media (max-width: 1231px){
      #ufo {
-          background-image: url('/images/Alien.png');
+          background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Alien.png');
           background-repeat: no-repeat;
           background-size: contain;
           width: 363px;
@@ -173,7 +173,7 @@ section{
 
 @media (max-width: 1137px){
      #ufo {
-          background-image: url('/images/Alien.png');
+          background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Alien.png');
           background-repeat: no-repeat;
           background-size: contain;
           width: 301px;
@@ -184,5 +184,41 @@ section{
           animation: float 13s ease-in-out infinite;
      }
 }
+@media (max-width: 900px){
+     #ufo {
+          background-image: url('C:/Users/Chris/Desktop/Software Engineering files/Christians-Tic-tac-toe/Christians-Tic-tac-toe/images/Alien.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 301px;
+          height: 334px;
+          position: relative;
+          bottom: 225px;
+          left: 485px;
+          animation: float 13s ease-in-out infinite;
+     }
+}
+@media (max-width: 900px) {
+     .title {
+       width: 100%;
+       font-size: 60px;
+       position: relative;
+       right: 150px;
+     }
+   
+     .board {
+       position: relative;
+       right: 150px;
+     }
+   
+     .square {
+       width: 80px;
+       height: 80px;
+     }
+     #outcome{
+     position: relative;
+       right: 150px;
+     }
+   }
+   
 
 
